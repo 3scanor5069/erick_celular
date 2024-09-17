@@ -36,7 +36,7 @@ const SignIn = () => {
   };
 
   return (
-    <SafeAreaView background="#000000" className=" h-full">
+    <SafeAreaView className="bg-primary h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
           <Image source={images.logo} resizeMode='contain' className="w-[115px] h-[35px]" />
@@ -48,7 +48,7 @@ const SignIn = () => {
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
-            inputStyle={{ color: '#000', backgroundColor: '#F0F0F0' }}
+            inputStyle={{ color: 'white', backgroundColor: '#f0f0f0' }}
           />
           <FormField 
             title="Password"
@@ -56,7 +56,7 @@ const SignIn = () => {
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-7"
             secureTextEntry
-            inputStyle={{ color: '#000', backgroundColor: '#f0f0f0' }}
+            inputStyle={{ color: 'white', backgroundColor: '#f0f0f0' }}
           />
           <CustomButton 
             title="Sign in"
